@@ -1,6 +1,5 @@
 <script lang="ts">
   import { A } from "flowbite-svelte";
-
     export let title:string;
 </script>
 <style>
@@ -22,7 +21,7 @@
   .hoverHelper::after {
     content: "";
     position: absolute;
-    background-color: theme("colors.primary.100");
+    background: linear-gradient(90deg, var(--iconColor), var(--accent));
     height: 2px;
     width: 0;
     left: 0;
@@ -38,16 +37,16 @@
     position: absolute;
     left: -20px;
     opacity: 1;
-    color: theme("colors.primary.100");
+    color: var(--iconColor);
   }
 
   .hoverHelper:hover .spanRight {
     position: absolute;
     right: -20px;
     opacity: 1;
-    color: theme("colors.primary.100");
+    color: var(--accent);
   }
 </style>
 <div class="hoverHelper" style="position: relative;">
-<A color="text-gray-900 dark:text-white" aClass="text-base" class="navtext" href=""><span class="spanLeft">[</span><span>{title}</span><span class="spanRight">]</span></A>
+<A color="text-gray-900 dark:text-white" aClass="text-xl" class="navtext" href=""><span class="spanLeft">[</span><span>{title}</span><span class="spanRight">]</span></A>
 </div>
