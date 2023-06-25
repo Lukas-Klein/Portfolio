@@ -25,6 +25,7 @@
   },
   "dependencies": {
     "flowbite": "^1.6.6",
-    "flowbite-svelte": "^0.38.5"
+    "flowbite-svelte": "^0.38.5",
+    "prettier-plugin-svelte": "^2.10.1"
   }
 }
