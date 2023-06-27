@@ -221,3 +221,7 @@ section {
 	gap: 1rem;
 	margin-top: 1rem;
 }
+
+.timelineWrapper {
+	margin: 0 8rem 0 8rem;
+}
