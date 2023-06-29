@@ -69,7 +69,7 @@
 	<P size="xl">My current Techstack consists of:</P>
 	<div class="techstackWrapper">
 		{#each techstack as tech}
-			<a href={tech.url}>
+			<a target="_blank" href={tech.url}>
 				<Img src={tech.icon} class="mt-3" size="w-16" imgClass="h-16" />
 				<Tooltip placement="bottom">{tech.name}</Tooltip>
 			</a>
