@@ -2,12 +2,12 @@
 	import { Badge, Card, Heading } from 'flowbite-svelte';
 	import { onMount } from 'svelte';
 	import axios from 'axios';
-	import { type iGithubProject, type Repo } from '../types/types';
+	import { type iGithubProject, type iRepo } from '../types/types';
 
 	let projects: iGithubProject[] = [];
 
 	onMount(async () => {
-		const response = await axios.get<Repo[]>('https://api.github.com/users/Lukas-Klein/repos');
+		const response = await axios.get<iRepo[]>('https://api.github.com/users/Lukas-Klein/repos');
 		projects = response.data.map((project) => ({
 			name: project.full_name,
 			description: project.description,

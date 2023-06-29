@@ -202,6 +202,13 @@ section {
 	animation: bounce 2s infinite;
 }
 
+.techstackWrapper {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-evenly;
+	margin-bottom: 2rem;
+}
+
 .projectsWrapper {
 	margin: 0 8rem 2rem 8rem;
 	text-align: left;

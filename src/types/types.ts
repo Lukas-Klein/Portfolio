@@ -7,7 +7,7 @@ export interface iGithubProject {
 	watchers: number;
 }
 
-export interface Repo {
+export interface iRepo {
 	id: number;
 	name: string;
 	full_name: string;
@@ -19,4 +19,10 @@ export interface Repo {
 	watchers_count: number;
 	created_at: string;
 	updated_at: string;
+}
+
+export interface iTechstack {
+	name: string;
+	icon: string;
+	url: string;
 }
