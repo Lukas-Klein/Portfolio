@@ -21,7 +21,7 @@
 
 <div class="projectsWrapper">
 	{#each projects as project}
-		<Card size="xl" class="Card my-5" target="_blank" href={project.url}>
+		<Card size="xl" class="Card mb-5" target="_blank" href={project.url}>
 			<Heading tag="h4">{project.name}</Heading>
 			<p class="mt-2 font-normal text-gray-700 dark:text-gray-400 leading-tight">
 				{project.description}

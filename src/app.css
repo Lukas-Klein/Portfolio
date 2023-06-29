@@ -78,7 +78,7 @@ section {
 	position: relative;
 	right: 20px;
 	gap: 1rem;
-	grid-template-columns: 1fr 1fr 1fr 0.7fr;
+	grid-template-columns: 1fr 1fr 0.5fr;
 	justify-items: end;
 	align-items: center;
 	justify-self: end;
@@ -110,9 +110,12 @@ section {
 }
 
 .social-container {
-	width: 400px;
-	margin: 40vh auto;
 	text-align: center;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	margin: 0;
 }
 
 .social-icons {
@@ -200,9 +203,7 @@ section {
 }
 
 .projectsWrapper {
-	/* display: grid;
-	grid-template-columns: 1fr 1fr; */
-	margin: 5rem 8rem 0 8rem;
+	margin: 0 8rem 2rem 8rem;
 	text-align: left;
 }
 
@@ -224,4 +225,55 @@ section {
 
 .timelineWrapper {
 	margin: 0 8rem 0 8rem;
+}
+
+@media screen and (max-width: 1200px) {
+	#app {
+		width: 80vw;
+	}
+}
+
+@media screen and (max-width: 992px) {
+	.projectsWrapper {
+		margin: 0 4rem 2rem 4rem;
+	}
+	.timelineWrapper {
+		margin: 0 4rem 0 4rem;
+	}
+}
+@media screen and (max-width: 768px) {
+	.projectsWrapper {
+		margin: 0 2rem 2rem 2rem;
+	}
+	.timelineWrapper {
+		margin: 0 2rem 0 2rem;
+	}
+	.welcomeText {
+		width: 75vw;
+	}
+}
+@media screen and (max-width: 576px) {
+	.projectsWrapper {
+		margin: 0 1rem 2rem 1rem;
+	}
+	.timelineWrapper {
+		margin: 0 1rem 0 1rem;
+	}
+	.navHeader {
+		gap: 5rem;
+	}
+	#app {
+		width: 100vw;
+	}
+	.navHeader {
+		display: none;
+	}
+}
+@media screen and (max-width: 420px) {
+	.welcomeText {
+		width: 95vw;
+	}
+	.aboutText {
+		margin: 0.5rem 1rem;
+	}
 }

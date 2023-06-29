@@ -6,7 +6,7 @@
 	import UniversitySvg from '../assets/university.svg';
 </script>
 
-<Timeline class="mt-10" order="vertical">
+<Timeline order="vertical">
 	<TimelineItem title="Middle School Graduation" date="July 31st, 2018">
 		<svelte:fragment slot="icon">
 			<span
@@ -17,7 +17,7 @@
 		</svelte:fragment>
 		<p class="mb-4 text-base font-normal text-gray-500 dark:text-gray-400">
 			On July 31st, 2018, I successfully completed my middle school education in a STEM-focused
-			program at a prominent secondary school.
+			program at a secondary school.
 		</p>
 	</TimelineItem>
 	<TimelineItem title="Mechatronics Engineering Training" date="September 1st, 2018">
@@ -30,7 +30,7 @@
 		</svelte:fragment>
 		<p class="text-base font-normal text-gray-500 dark:text-gray-400">
 			I embarked on my journey to become a mechatronics engineer on September 1st, 2018, by starting
-			my training at the prestigious Robert Bosch GmbH in Bamberg, Germany.
+			my training at the Robert Bosch GmbH in Bamberg, Germany.
 		</p>
 	</TimelineItem>
 	<TimelineItem title=" Completion of Training and High School Diploma" date="July 31st, 2021">
