@@ -2,7 +2,7 @@
 	import DarkModeButton from './components/darkModeButton.svelte';
 	import app from './app.css';
 	import HeaderTab from './components/headerTab.svelte';
-	import { P, Heading, Img, Span, Hr, Tooltip } from 'flowbite-svelte';
+	import { P, Heading, Img, Span, Hr, Tooltip, Button } from 'flowbite-svelte';
 	import WelcomeText from './components/welcomeText.svelte';
 	import GithubProjects from './components/githubProjects.svelte';
 	import CareerTimeline from './components/careerTimeline.svelte';
@@ -12,6 +12,8 @@
 	import supabaseSVG from './assets/supabase-icon.svg';
 	import vercelSVG from './assets/vercel-icon.svg';
 	import type { iTechstack } from './types/types';
+
+	let yPosition: number = 0;
 
 	const techstack: iTechstack[] = [
 		{
@@ -40,8 +42,63 @@
 	const age: number = Math.floor(
 		(Date.now() - birthday.getTime()) / (1000 * 60 * 60 * 24 * 365.25)
 	);
+
+	// TODO: Animation
+	function hideArrow(y: number) {
+		const arrow = document.getElementById('arrowDown');
+		if (arrow) {
+			if (y > 400) {
+				arrow.style.display = 'none';
+			} else {
+				arrow.style.display = 'flex';
+			}
+		}
+	}
+
+	function showBackToTop(y: number) {
+		const backToTop = document.getElementById('backToTop');
+
+		if (window.innerWidth > 576) {
+			if (backToTop) {
+				if (y > 400) {
+					backToTop.style.display = 'flex';
+				} else {
+					backToTop.style.display = 'none';
+				}
+			}
+		}
+	}
+
+	function scrollToTop() {
+		window.scrollTo({ top: 0, behavior: 'smooth' });
+	}
+
+	$: hideArrow(yPosition), showBackToTop(yPosition);
 </script>
 
+<svelte:window bind:scrollY={yPosition} />
+<Button
+	on:click={() => {
+		scrollToTop();
+	}}
+	id="backToTop"
+	class="backUpButton !p-2"
+	pill={true}
+	outline={true}
+	size="xl"
+	><svg
+		aria-hidden="true"
+		class="w-5 h-5"
+		fill="currentColor"
+		viewBox="0 0 20 20"
+		xmlns="http://www.w3.org/2000/svg"
+		><path
+			fill-rule="evenodd"
+			d="M11 17V5.414l3.293 3.293a.999.999 0 101.414-1.414l-5-5a.999.999 0 00-1.414 0l-5 5a.997.997 0 000 1.414.999.999 0 001.414 0L9 5.414V17a1 1 0 102 0z"
+			clip-rule="evenodd"
+		/></svg
+	></Button
+>
 <section id="home">
 	<nav class="navHeader">
 		<div class="menuL"><HeaderTab title="lukas" /></div>
@@ -53,7 +110,7 @@
 		</div>
 	</nav>
 	<WelcomeText />
-	<div class="arrow bounce" />
+	<div id="arrowDown" class="arrow bounce" />
 </section>
 <section id="lukas">
 	<Heading class="text-left mb-10"><Span underline>about me:</Span></Heading>
