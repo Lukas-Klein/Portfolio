@@ -49,8 +49,11 @@
 		const arrow = document.getElementById('arrowDown');
 		if (arrow) {
 			if (y > 400) {
-				arrow.style.display = 'none';
+				arrow.classList.remove('bounce');
+				arrow.classList.add('slide-out');
 			} else {
+				arrow.classList.remove('slide-out');
+				arrow.classList.add('bounce');
 				arrow.style.display = 'flex';
 			}
 		}
@@ -62,9 +65,10 @@
 		if (window.innerWidth > 576) {
 			if (backToTop) {
 				if (y > 400) {
+					backToTop.classList.remove('slide-out');
 					backToTop.style.display = 'flex';
 				} else {
-					backToTop.style.display = 'none';
+					backToTop.classList.add('slide-out');
 				}
 			}
 		}
