@@ -14,6 +14,7 @@
 	import type { iTechstack } from './types/types';
 
 	let yPosition: number = 0;
+	let tag: 'h1' | 'h2' | 'h3' | 'h4' | 'h5' | 'h6' = 'h1';
 
 	const techstack: iTechstack[] = [
 		{
@@ -69,11 +70,19 @@
 		}
 	}
 
+	function shrinkHeader(width: number) {
+		if (width < 420) {
+			tag = 'h2';
+		} else {
+			tag = 'h1';
+		}
+	}
+
 	function scrollToTop() {
 		window.scrollTo({ top: 0, behavior: 'smooth' });
 	}
 
-	$: hideArrow(yPosition), showBackToTop(yPosition);
+	$: hideArrow(yPosition), showBackToTop(yPosition), shrinkHeader(window.innerWidth);
 </script>
 
 <svelte:window bind:scrollY={yPosition} />
@@ -113,7 +122,7 @@
 	<div id="arrowDown" class="arrow bounce" />
 </section>
 <section id="lukas">
-	<Heading class="text-left mb-10"><Span underline>about me:</Span></Heading>
+	<Heading {tag} class="text-left mb-10"><Span underline>about me:</Span></Heading>
 	<Img src="Lukas.JPEG" size="w-72" imgClass="h-72" alignment="mx-auto" class="rounded-full" />
 	<P size="xl" align="center" class="mt-20 mx-10 aboutText" weight="light">
 		Hi there! My name is Lukas Klein, a {age}-year-old studying <Span underline
@@ -134,11 +143,11 @@
 	</div>
 </section>
 <section id="projects">
-	<Heading class="text-left mb-10"><Span underline>My projects:</Span></Heading>
+	<Heading {tag} class="text-left mb-10"><Span underline>My projects:</Span></Heading>
 	<GithubProjects />
 </section>
 <section id="career">
-	<Heading class="text-left mb-10"><Span underline>Career:</Span></Heading>
+	<Heading {tag} class="text-left mb-10"><Span underline>Career:</Span></Heading>
 	<div class="timelineWrapper">
 		<CareerTimeline />
 	</div>
