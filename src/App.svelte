@@ -129,7 +129,7 @@
 	<Heading {tag} class="text-left mb-10"><Span underline>about me:</Span></Heading>
 	<Img src="Lukas.JPEG" size="w-72" imgClass="h-72" alignment="mx-auto" class="rounded-full" />
 	<P size="xl" align="center" class="mt-20 mx-10 aboutText" weight="light">
-		Hi there! My name is Lukas Klein, a {age}-year-old studying <Span underline
+		Hi there! My name is Lukasssss Klein, a {age}-year-old studying <Span underline
 			>computer science</Span
 		> at the Provadis Hochschule as part of my dual program with Deutsche Telekom AG. I'm particularly
 		drawn to <Span underline>web development</Span>, where I enjoy enhancing the user experience and
