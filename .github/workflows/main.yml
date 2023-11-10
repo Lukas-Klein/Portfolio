@@ -17,8 +17,9 @@ jobs:
         install -m 600 -D /dev/null ~/.ssh/id_rsa
         echo "${{ secrets.SSH_PRIVATE_KEY }}" > ~/.ssh/id_rsa
         ssh-keyscan -H ${{ secrets.SSH_HOST }} > ~/.ssh/known_hosts
+        ls
     - name: connect and pull
-      run: ssh ${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }} -i ~/.ssh/id_rsa "cd ${{ secrets.WORK_DIR }} && sudo git checkout ${{ secrets.MAIN_BRANCH }} && sudo git pull"
+      run: ssh ${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }} -i /.ssh/id_rsa "cd ${{ secrets.WORK_DIR }} && sudo git checkout ${{ secrets.MAIN_BRANCH }} && sudo git pull"
     - name: build & deploy
       run: "sudo npm run build && sudo mv /dist/* ../www/html/"
     - name: cleanup
