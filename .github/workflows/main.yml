@@ -21,6 +21,6 @@ jobs:
     - name: connect and pull
       run: ssh ${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }} -i /.ssh/id_rsa "cd ${{ secrets.WORK_DIR }} && sudo git checkout ${{ secrets.MAIN_BRANCH }} && sudo git pull"
     - name: build & deploy
-      run: "sudo npm run build && sudo mv /dist/* ../www/html/"
+      run: "sudo npm ci && sudo npm run build && sudo mv /dist/* ../www/html/"
     - name: cleanup
       run: rm -rf ~/.ssh
