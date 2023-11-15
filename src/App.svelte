@@ -44,7 +44,6 @@
 		(Date.now() - birthday.getTime()) / (1000 * 60 * 60 * 24 * 365.25)
 	);
 
-	// TODO: Animation
 	function hideArrow(y: number) {
 		const arrow = document.getElementById('arrowDown');
 		if (arrow) {
