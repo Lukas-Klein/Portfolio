@@ -258,11 +258,12 @@ section {
 }
 
 .Card {
+	transform: perspective(1px);
 	transition: transform 0.5s, box-shadow 0.5s;
 }
 
 .Card:hover {
-	transform: scale(1.02) perspective(0px);
+	transform: translate3d(0, 0, 0) scale(1.02);
 	box-shadow: 0px 0px 15px rgba(28, 100, 242, 255);
 }
 
