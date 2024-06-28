@@ -3,7 +3,7 @@ import { svelte } from '@sveltejs/vite-plugin-svelte';
 
 // https://vitejs.dev/config/
 export default defineConfig({
-	base: '/Portfolio/',
+	base: './',
 	plugins: [svelte()],
 	optimizeDeps: {
 		exclude: ['svelte-typewriter']
