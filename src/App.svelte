@@ -128,11 +128,12 @@
 	<Heading {tag} class="text-left mb-10"><Span underline>about me:</Span></Heading>
 	<Img src="Lukas.JPEG" size="w-72" imgClass="h-72" alignment="mx-auto" class="rounded-full" />
 	<P size="xl" align="center" class="mt-20 mx-10 aboutText" weight="light">
-		Hi there! My name is Lukas Klein, a {age}-year-old studying <Span underline
-			>computer science</Span
-		> at the Provadis Hochschule as part of my dual program with Deutsche Telekom AG. I'm particularly
-		drawn to <Span underline>web development</Span>, where I enjoy enhancing the user experience and
-		exploring the realms of technology.
+		Hi there! My name is Lukas Klein, a {age}-year-old studying computer science at the Provadis
+		Hochschule as part of my dual program with Deutsche Telekom AG. I work as a <Span underline
+			>DevOps Engineer</Span
+		> and have some hands on experience with Microsoft Azure. <br />
+		In the past I was drawn to the world of web development and have been working with Svelte and TypeScript.
+		Feel free to check out my projects and career timeline below!
 	</P>
 	<Hr class="my-8" />
 	<P size="xl">My current Techstack consists of:</P>
