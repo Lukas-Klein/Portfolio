@@ -1,10 +1,10 @@
-# Lukas Klein Portfolio Website 
+# Lukas Klein Portfolio Website
 
 Visit the website at [kleinlukas.de](https://www.kleinlukas.de/)
 
 ## About Lukas Klein
 
-I am a 21-year-old computer science student currently engaged in a dual study program with Deutsche Telekom AG.
+I am a computer science student currently engaged in a dual study program with Deutsche Telekom AG.
 
 ## Website Features
 
