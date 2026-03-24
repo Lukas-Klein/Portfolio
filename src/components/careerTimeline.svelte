@@ -59,4 +59,45 @@
 			study program at Deutsche Telekom AG to obtain my bachelor's degree in computer science.
 		</p>
 	</TimelineItem>
+	<TimelineItem title="Dual Study Completed" date="September 2024">
+		<svelte:fragment slot="icon">
+			<span
+				class="flex absolute -left-3 justify-center items-center w-6 h-6 bg-primary-200 rounded-full ring-8 ring-white dark:ring-gray-900 dark:bg-primary-900"
+			>
+				<img src={DiplomaSvg} alt="" />
+			</span>
+		</svelte:fragment>
+		<p class="text-base font-normal text-gray-500 dark:text-gray-400">
+			Wrapped up my dual study program in computer science in September 2024. My Bachelor thesis was
+			about the Evolution of RAG (Retrieval Augemented Generation) Benchmarks. I compared and
+			analyzed existing benchmarks and create my own benchmark based on my findings. It was graded
+			with 1.0.
+		</p>
+	</TimelineItem>
+	<TimelineItem title="DevOps Engineer at Deutsche Telekom IT" date="Present">
+		<svelte:fragment slot="icon">
+			<span
+				class="flex absolute -left-3 justify-center items-center w-6 h-6 bg-primary-200 rounded-full ring-8 ring-white dark:ring-gray-900 dark:bg-primary-900"
+			>
+				<img src={UniversitySvg} alt="" />
+			</span>
+		</svelte:fragment>
+		<p class="text-base font-normal text-gray-500 dark:text-gray-400">
+			Now working as a DevOps Engineer at Deutsche Telekom IT in the Azure Landingzone Team,
+			focusing on cloud engineering in Microsoft Azure. We also developed an internal RAG Chatbot
+			during that time. It is written in python and uses Azure services.
+		</p>
+	</TimelineItem>
+	<TimelineItem title="Telekom Talent Program" date="November 2025 - Present">
+		<svelte:fragment slot="icon">
+			<span
+				class="flex absolute -left-3 justify-center items-center w-6 h-6 bg-primary-200 rounded-full ring-8 ring-white dark:ring-gray-900 dark:bg-primary-900"
+			>
+				<img src={SchoolSvg} alt="" />
+			</span>
+		</svelte:fragment>
+		<p class="text-base font-normal text-gray-500 dark:text-gray-400">
+			Part of the Telekom Talent Program since November 2025.
+		</p>
+	</TimelineItem>
 </Timeline>

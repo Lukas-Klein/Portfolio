@@ -4,7 +4,13 @@ Visit the website at [kleinlukas.de](https://www.kleinlukas.de/)
 
 ## About Lukas Klein
 
-I am a computer science student currently engaged in a dual study program with Deutsche Telekom AG.
+I am a DevOps Engineer at Deutsche Telekom IT in the Azure Landingzone Team, working on cloud
+engineering in Microsoft Azure.
+
+I finished my dual study in computer science in September 2024 and have been part of the Telekom
+Talent Program since November 2025.
+
+I also spent a lot of time building an AI RAG chatbot in Python.
 
 ## Website Features
 

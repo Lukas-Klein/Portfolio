@@ -7,10 +7,10 @@
 	import GithubProjects from './components/githubProjects.svelte';
 	import CareerTimeline from './components/careerTimeline.svelte';
 	import SocialBoxes from './components/socialBoxes.svelte';
-	import svelteSVG from './assets/svelte-icon.svg';
-	import typeScriptSVG from './assets/typescript-icon.svg';
-	import supabaseSVG from './assets/supabase-icon.svg';
-	import vercelSVG from './assets/vercel-icon.svg';
+	import pythonSVG from './assets/python-icon.svg';
+	import bicepSVG from './assets/bicep-icon.svg';
+	import gitlabSVG from './assets/gitlab-icon.svg';
+	import golangSVG from './assets/golang-icon.svg';
 	import type { iTechstack } from './types/types';
 
 	let yPosition: number = 0;
@@ -18,24 +18,24 @@
 
 	const techstack: iTechstack[] = [
 		{
-			name: 'Svelte',
-			icon: svelteSVG,
-			url: 'https://svelte.dev/'
+			name: 'Python',
+			icon: pythonSVG,
+			url: 'https://www.python.org/'
 		},
 		{
-			name: 'TypeScript',
-			icon: typeScriptSVG,
-			url: 'https://www.typescriptlang.org/'
+			name: 'Bicep',
+			icon: bicepSVG,
+			url: 'https://learn.microsoft.com/en-us/azure/azure-resource-manager/bicep/'
 		},
 		{
-			name: 'Supabase',
-			icon: supabaseSVG,
-			url: 'https://supabase.io/'
+			name: 'GitLab',
+			icon: gitlabSVG,
+			url: 'https://about.gitlab.com/'
 		},
 		{
-			name: 'Vercel',
-			icon: vercelSVG,
-			url: 'https://vercel.com/'
+			name: 'Go',
+			icon: golangSVG,
+			url: 'https://go.dev/'
 		}
 	];
 
@@ -126,14 +126,14 @@
 </section>
 <section id="lukas">
 	<Heading {tag} class="text-left mb-10"><Span underline>about me:</Span></Heading>
-	<Img src="Lukas.JPEG" size="w-72" imgClass="h-72" alignment="mx-auto" class="rounded-full" />
+	<Img src="lukas.jpg" size="w-72" imgClass="h-72" alignment="mx-auto" class="rounded-full" />
 	<P size="xl" align="center" class="mt-20 mx-10 aboutText" weight="light">
-		Hi there! My name is Lukas Klein, a {age}-year-old studying computer science at the Provadis
-		Hochschule as part of my dual program with Deutsche Telekom AG. I work as a <Span underline
-			>DevOps Engineer</Span
-		> and have some hands on experience with Microsoft Azure. <br />
-		In the past I was drawn to the world of web development and have been working with Svelte and TypeScript.
-		Feel free to check out my projects and career timeline below!
+		Hey, I'm Lukas, {age} years old, and currently working as a DevOps Engineer at Deutsche Telekom IT
+		GmbH in the Azure Landingzone Team. Day to day, that means a lot of cloud engineering work in Microsoft
+		Azure. I finished my dual study in computer science in September 2024 and kept going deeper into
+		platform and cloud topics after that. <br />
+		Lately, I also spent a lot of time building an AI RAG chatbot in Python, and since November 2025
+		I'm part of the Telekom Talent Program. If you're curious, check out my projects and timeline below.
 	</P>
 	<Hr class="my-8" />
 	<P size="xl">My current Techstack consists of:</P>
